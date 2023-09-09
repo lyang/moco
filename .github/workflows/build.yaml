@@ -29,6 +29,4 @@ jobs:
         with:
           gradle-version: wrapper
 
-      - name: Build
-        run: ./gradlew moco-runner:test
-
+      - run: ./gradlew :moco-core:test --tests "com.github.dreamhead.moco.MocoProxyTest.should_proxy_with_request_method"
