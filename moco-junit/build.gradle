@@ -1,7 +1,7 @@
 project.dependencies {
     api(project(':moco-core'))
     api(project(':moco-runner'))
-    api("junit:junit:4.7")
+    api("junit:junit:4.13.2")
 
     testImplementation(
             project(':moco-core').sourceSets.test.output,
